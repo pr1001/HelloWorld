@@ -7,7 +7,8 @@ import net.liftweb.http.{LiftRules, S}
 object HelloWorld {
     def init() {
         LiftRules.addToPackages("net.lift_modules.HelloWorld")
-        SiteMap.addMenusAtEndMutator(Menu(S ? "Hello World") / "helloworld" :: Nil)
+        val mutator = SiteMap.addMenusAtEndMutator(Menu(S ? "Hello World") / "helloworld" :: Nil)
+        LiftRules.siteMap.foreach(sitemap => LiftRules.setSiteMap(mutator(sitemap)))
     }
 }
 
