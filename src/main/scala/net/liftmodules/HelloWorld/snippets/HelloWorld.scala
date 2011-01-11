@@ -1,4 +1,4 @@
-package net.lift_modules {
+package net.liftmodules {
 package HelloWorld {
 package snippet {
 

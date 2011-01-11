@@ -1,4 +1,4 @@
-package net.lift_modules {
+package net.liftmodules {
 package HelloWorld {
 
 import net.liftweb.sitemap.{Menu, SiteMap}
@@ -21,19 +21,3 @@ object HelloWorld {
 
 }
 }
-/*
-
-in Boot.scala
-
-import net.lift_modules.HelloWorld.HelloWorld
-
-HelloWorld.init
-
-val sitemap = HelloWorld.menu :: Nil
-
-LiftRules.setSiteMap(SiteMap(sitemap: _*))
-
-email david about init method 
--> changing the structure of Boot for Menu building
-
-*/
