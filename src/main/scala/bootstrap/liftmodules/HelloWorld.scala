@@ -7,7 +7,7 @@ import net.liftweb.sitemap.Loc.Template
 
 object HelloWorld {
     def init() {
-        LiftRules.addToPackages("net.lift_modules.HelloWorld")
+        LiftRules.addToPackages("net.liftmodules.HelloWorld")
         val menu = Menu(S ? "Hello World") / "helloworld" >> Template(() => {
             <lift:surround with="default" at="content">
                 <lift:HelloWorld.sayHello />
